@@ -1,112 +1,81 @@
-<p align="center">
-  <a href="https://vuestic.dev" target="_blank">
-    <img alt="Vuestic UI Logo" width="220" src="./.github/assets/vuestic-admin-logo.png">
-  </a>
-</p>
+# Vuetify (Default)
 
-<p align="center">
-  Free and beautiful Admin Template utilizing Vue 3, Vite, Pinia, and Tailwind CSS. Designed for building efficient, responsive, and fast-loading admin interfaces.</br>
-  Developed by  <a href="https://epicmax.co">Epicmax</a>.</br>
-  Based on <a href="https://ui.vuestic.dev">Vuestic UI</a> library.
-</p>
+This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
 
-<p align="center">
-  <a href="https://admin-demo.vuestic.dev"> Live Demo </a> |
-  <a href="https://admin.vuestic.dev/"> About Vuestic Admin </a> |
-  <a href="https://ui.vuestic.dev/">Vuestic UI documentation</a>
-</p>
+## ❗️ Important Links
 
-> Vuestic Admin is built with [Vuestic UI](https://ui.vuestic.dev). See our
-> <a href="https://github.com/epicmaxco/vuestic-ui/issues">issues</a>,
-> <a href="https://ui.vuestic.dev/en/contribution/guide">contributing guide</a> and join discussions on our
-> <a href="https://discord.gg/jTKTjj2weV">Discord server</a> to help us improve Vuestic Admin & Vuestic UI experience.
+- 📄 [Docs](https://vuetifyjs.com/)
+- 🚨 [Issues](https://issues.vuetifyjs.com/)
+- 🏬 [Store](https://store.vuetifyjs.com/)
+- 🎮 [Playground](https://play.vuetifyjs.com/)
+- 💬 [Discord](https://community.vuetifyjs.com)
 
-<p align="center">
-  <a href="https://admin.vuestic.dev" target="_blank">
-    <img src="./public/vuestic-admin-image.png" align="center" width="888px"/>
-  </a>
-</p>
+## 💿 Install
 
-### Quick start
+Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
 
-Use following command to quickly scaffold new [Vuestic Admin](https://admin-demo.vuestic.dev) or empty Vite or Nuxt project with [Vuestic UI](https://ui.vuestic.dev).
+| Package Manager                                                | Command        |
+|---------------------------------------------------------------|----------------|
+| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
+| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
+| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
+| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
+
+After completing the installation, your environment is ready for Vuetify development.
+
+## ✨ Features
+
+- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
+- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
+- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- 💻 **Enhanced Development Experience**: Benefit from TypeScript's static type checking and the ESLint plugin suite for Vue, ensuring code quality and consistency. [TypeScript](https://www.typescriptlang.org/) | [ESLint Plugin Vue](https://eslint.vuejs.org/)
+- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
+- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+- 🛠️ **Strongly-Typed Vue**: Use vue-tsc for type-checking your Vue components, and enjoy a robust development experience. [vue-tsc](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc)
+
+These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
+
+## 💡 Usage
+
+This section covers how to start the development server and build your project for production.
+
+### Starting the Development Server
+
+To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
 
 ```bash
-npm create vuestic@latest
+yarn dev
 ```
 
-After [Vuestic Admin](https://admin.vuestic.dev) is installed, run `npm install` to install dependcies, then run `npm run dev` to start local development server.
+(Repeat for npm, pnpm, and bun with respective commands.)
 
-### Documentation
+> NODE_OPTIONS='--no-warnings' is added to suppress the JSON import warnings that happen as part of the Vuetify import mapping. If you are on Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) or higher, you can change this to NODE_OPTIONS='--disable-warning=5401'. If you don't mind the warning, you can remove this from your package.json dev script.
 
-Documentation, guides, examples and tutorials are available on [ui.vuestic.dev](https://ui.vuestic.dev)
+### Building for Production
 
-### Official Discord Server
+To build your project for production, use:
 
-Ask questions at the official community [discord server](https://discord.gg/jTKTjj2weV)
+```bash
+yarn build
+```
 
-### Features
+(Repeat for npm, pnpm, and bun with respective commands.)
 
-- **Vue 3, Vite, Pinia, and Tailwind CSS -** Fast and efficient development
-- **Dark Theme -** Modern and eye-catching
-- **Global Configuration -** Effortless customization
-- **Accessibility -** Inclusive and user-friendly
-- **i18n Integration -** Easy localization for global reach
-- **Educational Resource -** Ideal for learning and improving skills
-- **Responsive Design -** Adapts seamlessly to all devices
-- **Professional Support -** Reliable help from the experts
-- **Highly Customizable -** Tailor to your project’s style
+Once the build process is completed, your application will be ready for deployment in a production environment.
 
-### Contributing
+## 💪 Support Vuetify Development
 
-Thanks for all your wonderful PRs, issues and ideas.
+This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
 
-<a href="https://github.com/epicmaxco/vuestic-admin/graphs/contributors">
-<img src="https://opencollective.com/vuestic-admin/contributors.svg?width=890&button=false" />
-</a>
-<br>
+- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
+- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
+- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
+- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
+- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
+- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
+- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
 
-You’re always welcome to join: check out
-our <a href="https://ui.vuestic.dev/en/contribution/guide">
-contribution guides</a>
-, [open issues](https://github.com/epicmaxco/vuestic-ui/issues)
-and [Discord server](https://discord.gg/jTKTjj2weV)
+## 📑 License
+[MIT](http://opensource.org/licenses/MIT)
 
-### Partners & Sponsors ❤️
-
-<img src="./.github/assets/sponsors.png" loading="lazy" alt="Epicmax, vuejobs, ag-grid, flatlogic, browserstack and jetbrains" width="400px">
-
-Become a partner: [hello@epicmax.co](mailto:hello@epicmax.co)
-
-### Can I hire you guys?
-
-[Epicmax](https://epicmax.co) is committed to Open Source from its beginning. Vuestic Admin was created and backed by Epicmax, and is supported through all the years.
-
-With 6+ years of dedicated work on both commercial and open-source projects, and more than 47 clients worldwide across various fields, Epicmax has deep expertise in frontend development, especially in Vue.js. We regularly conduct code audits for our projects and now excited to offer this service not only to our existing clients but to anyone looking to understand the state of their frontend code and ensure it's secure and up-to-date!
-
-You can request a consultation or order web development services by Epicmax via this [form](https://epicmax.co/contacts) 😎
-
-Say hi: <a href="mailto:hello@epicmax.co">hello@epicmax.co</a>. We will be happy to work with you!
-
-[Other work](https://epicmax.co) we’ve done 🤘
-
-[Meet the Team](https://ui.vuestic.dev/introduction/team)
-
-### Awards
-
-<a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank">
-    <img src="https://i.imgur.com/ZeQPZ3Q.png" align="center" width="150px"/>
-</a>
-<p>
-  By <a href="https://flatlogic.com/templates/vuestic-vue-free-admin" target="_blank">@flatlogic</a> marketplace
-</p>
-
-### Follow us
-
-Stay up to date with the latest Vuestic news! Follow us
-on [Twitter](https://twitter.com/vuestic_ui)
-or [Linkedin](https://www.linkedin.com/company/18509340)
-
-### License
-
-[MIT](https://github.com/epicmaxco/vuestic-admin/blob/master/LICENSE) license.
+Copyright (c) 2016-present Vuetify, LLC
